@@ -1,5 +1,13 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-pytest-trio (0.8.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Install testfiles using d/pybuild.testfiles.
+  * Add patch to fix imports of trio._tests from python3-trio-0.22.1.
+  * Clean up .pytest_cache directory after build-time tests.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Michael Fladischer <fladi@debian.org>  Tue, 11 Jul 2023 12:57:59 +0000
+
+python-pytest-trio (0.8.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #1040009).
+
+ -- Michael Fladischer <fladi@debian.org>  Sat, 01 Jul 2023 10:38:02 +0000
