@@ -1,0 +1,20 @@
+From: Michael Fladischer <FladischerMichael@fladi.at>
+Date: Tue, 11 Jul 2023 12:30:08 +0000
+Subject: Fix import of trio._tests.
+
+---
+ pytest_trio/_tests/test_hypothesis_interaction.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pytest_trio/_tests/test_hypothesis_interaction.py b/pytest_trio/_tests/test_hypothesis_interaction.py
+index 75aa9f7..40c51b1 100644
+--- a/pytest_trio/_tests/test_hypothesis_interaction.py
++++ b/pytest_trio/_tests/test_hypothesis_interaction.py
+@@ -1,6 +1,6 @@
+ import pytest
+ import trio
+-from trio.tests.test_scheduler_determinism import (
++from trio._tests.test_scheduler_determinism import (
+     scheduler_trace,
+     test_the_trio_scheduler_is_not_deterministic,
+     test_the_trio_scheduler_is_deterministic_if_seeded,

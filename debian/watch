@@ -1,0 +1,4 @@
+version=4
+opts=filenamemangle=s/.+\/v([\d\.]+)\.tar\.gz/python-pytest-trio-$1.tar.gz/ \
+https://github.com/python-trio/pytest-trio/tags \
+/python-trio/pytest-trio/archive/refs/tags/v([\d\.]+)\.tar\.gz
