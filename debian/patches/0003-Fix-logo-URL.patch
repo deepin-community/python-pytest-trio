@@ -1,0 +1,21 @@
+From: Michael Fladischer <FladischerMichael@fladi.at>
+Date: Sun, 21 Jan 2024 20:48:29 +0000
+Subject: Fix logo URL.
+
+---
+ docs/source/_templates/layout.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/docs/source/_templates/layout.html b/docs/source/_templates/layout.html
+index f8ec93e..f056281 100644
+--- a/docs/source/_templates/layout.html
++++ b/docs/source/_templates/layout.html
+@@ -15,7 +15,7 @@ https://stackoverflow.com/questions/25243482/how-to-add-sphinx-generated-index-t
+     <div class="trio-version">{{ nav_version }}</div>
+   {% endif %}
+   <br>
+-  <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" />
++  <img class="logo" src="{{ pathto('_static/' + logo_url, 1) }}" />
+ </a>
+ 
+ {% include "searchbox.html" %}
